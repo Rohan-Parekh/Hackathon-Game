@@ -8,7 +8,7 @@
  */
  @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500");
  html {
-   line-height: 1.15;
+   line-height: 1.00;
    /* 1 */
    -ms-text-size-adjust: 100%;
    /* 2 */
@@ -405,10 +405,6 @@
  
  body {
    margin: 0;
-   background-image: url("https://i.pinimg.com/originals/a4/73/cd/a473cda6c0a58d9b2e2bc2292d16c334.jpg");
-   background-position: center;
-   background-repeat: repeat;
-   background-size: 100px; }
  
  .dark-purple {
    background: #5e3577; }
@@ -543,7 +539,66 @@
      font-size: 7px;
      font-weight: 400;
      padding-bottom: 5px; }
- 
+
+    /* Dice styling */
+.dice {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid black;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.left .container {
+      position: absolute;
+      top: 50px;
+      left: 50px; /* adjust this value depending on your needs */
+      width: 200px;
+      border-collapse: collapse;
+  }
+.player-table th, .player-table td {
+    border: 2px solid #050505;
+    padding: 8px;
+    text-align: center;
+}
+.player-table th {
+    background-color: #f2f2f2;
+  }
+
+.player-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+/* Table styling */
+.right-table {
+  width: 200px;
+  border-collapse: collapse;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.right-table th, .right-table td {
+  border: 2px solid #050505;
+  padding: 8px;
+  text-align: center;
+}
+
+.right-table th {
+  background-color: #f2f2f2;
+}
+
+.right-table tr:hover {
+  background-color: #f5f5f5;
+}
+
  .corner .container {
    justify-content: space-around;
    height: 100%;
@@ -720,5 +775,5 @@
  .three-line-name {
    position: relative;
    top: 5px; }
- 
+
  /*# sourceMappingURL=main.css.map */
