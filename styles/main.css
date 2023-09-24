@@ -428,6 +428,64 @@
  
  .dark-blue {
    background: #5a6dba; }
+
+.dice {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .left .container {
+        position: absolute;
+        top: 50px;
+        left: 50px; /* adjust this value depending on your needs */
+        width: 200px;
+        border-collapse: collapse;
+    }
+  .player-table th, .player-table td {
+      border: 2px solid #050505;
+      padding: 8px;
+      text-align: center;
+  }
+  .player-table th {
+      background-color: #f2f2f2;
+    }
+  
+  .player-table tr:hover {
+      background-color: #f5f5f5;
+    }
+  
+  /* Table styling */
+  .right-table {
+    width: 200px;
+    border-collapse: collapse;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  
+  .right-table th, .right-table td {
+    border: 2px solid #050505;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .right-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .right-table tr:hover {
+    background-color: #f5f5f5;
+  }
  
  .board {
    display: grid;
